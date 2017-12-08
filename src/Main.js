@@ -4,7 +4,10 @@ import { WrappedRegister } from './Register';
 export class Main extends React.Component {
     render() {
         return (
-            <WrappedRegister/>
+            <div className="main">
+                <WrappedRegister/>
+            </div>
+
         );
     }
 }
