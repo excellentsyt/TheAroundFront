@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Input, Button, message } from 'antd';
 import $ from 'jquery';
-import { API_ROOT } from "./constants";
+import { API_ROOT } from "../constants";
 
 const FormItem = Form.Item;
 
@@ -21,9 +21,9 @@ class RegistrationForm extends React.Component {
                         username: values.username,
                         password: values.password
                     })
-                }) .then(function (response) {
+                }).then(function (response) {
                     message.success(response);
-                }) .catch(function (error) {
+                }).catch(function (error) {
                     message.error(error.responseText);
                 });
             }
@@ -123,4 +123,4 @@ class RegistrationForm extends React.Component {
     }
 }
 
-export const WrappedRegister = Form.create()(RegistrationForm);
+export const Register = Form.create()(RegistrationForm);
