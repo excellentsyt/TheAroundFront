@@ -8,6 +8,7 @@ const operations = <Button>Extra Action</Button>;
 
 export class Home extends React.Component {
     state = {
+        error: "",
         loadingGeoLocation: false,
     }
 
@@ -23,13 +24,16 @@ export class Home extends React.Component {
                 GEO_OPTIONS,
             );
         } else {
-            console.log("geo location not supported!");
+            this.setState({
+                error: "Your browser does not support geolocattion!"
+            });
         }
     }
 
     onSuccessGeoLocation = (position) => {
         console.log(position);
         this.setState({
+            error: "",
             loadingGeoLocation: false,
         });
         const {latitude: lat, longitude: lon} = position.coords;
@@ -39,11 +43,14 @@ export class Home extends React.Component {
     onFailedLoadGeoLocation = () => {
         this.setState({
             loadingGeoLocation: false,
+            error: "Failed to load geo location!",
         });
     }
 
     getGalleryPanelContent() {
-        if (this.state.loadingGeoLocation) {
+        if (this.state.error) {
+            return <div>{this.state.error}</div>
+        } else if (this.state.loadingGeoLocation) {
             // show spinner
             return <Spin tip="Loading geo location ..."/>
         }
