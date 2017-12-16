@@ -3,6 +3,7 @@ import { Tabs, Button, Spin } from 'antd';
 import { GEO_OPTIONS} from "../constants"
 import { POS_KEY, AUTH_PREFIX, TOKEN_KEY, API_ROOT } from "../constants"
 import $ from 'jquery';
+import {Gallery} from "./Gallery"
 
 const TabPane = Tabs.TabPane;
 const operations = <Button>Extra Action</Button>;
@@ -60,8 +61,20 @@ export class Home extends React.Component {
             return <Spin tip="Loading geo location ..."/>
         } else if (this.state.loadingPosts) {
             return <Spin tip={"Loading posts ..."}/>
+        } else if (this.state.posts.length > 0) {
+            const images = this.state.posts.map((post) => {
+                return {
+                    user: post.user,
+                    src: post.url,
+                    thumbnail: post.url,
+                    thumbnailWidth: 400,
+                    thumbnailHeight: 300,
+                    caption: post.message,
+                };
+            });
+            console.log(images);
+            return <Gallery images={images}/>
         }
-
         return null;
     }
 
@@ -79,8 +92,9 @@ export class Home extends React.Component {
         }).then((response) => {
                 console.log(response);
                 this.setState({
-                    posts: response,
+                    posts: response == null ? [] : response,
                     loadingPosts: false,
+                    error: "",
                 });
             }, (error) => {
                 this.setState({
