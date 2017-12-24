@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b728910-61f7-4efb-8ad0-cbbe78add485" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/components/CreatePostButton.js" afterPath="$PROJECT_DIR$/src/components/CreatePostButton.js" />
       <change beforePath="$PROJECT_DIR$/src/components/CreatePostForm.js" afterPath="$PROJECT_DIR$/src/components/CreatePostForm.js" />
     </list>
@@ -27,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreatePostButton.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreatePostButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CreatePostButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -39,12 +38,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreatePostForm.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreatePostForm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CreatePostForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +101,8 @@
         <option value="$PROJECT_DIR$/src/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Gallery.js" />
         <option value="$PROJECT_DIR$/src/components/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/CreatePostForm.js" />
         <option value="$PROJECT_DIR$/src/components/CreatePostButton.js" />
+        <option value="$PROJECT_DIR$/src/components/CreatePostForm.js" />
       </list>
     </option>
   </component>
@@ -316,12 +317,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512735182460</updated>
       <workItem from="1512735185050" duration="24144000" />
-      <workItem from="1513169589237" duration="19307000" />
+      <workItem from="1513169589237" duration="20336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43451000" />
+    <option name="totallyTimeSpent" value="44480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="70" width="1622" height="906" extended-state="0" />
@@ -598,14 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CreatePostForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -618,10 +611,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CreatePostButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CreatePostForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
