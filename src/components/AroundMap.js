@@ -11,8 +11,8 @@ class AroundMap extends React.Component {
         const center = this.map.getCenter();
         const position = {lat: center.lat(), lon: center.lng()}
         console.log(position);
-        localStorage.setItem(POS_KEY, JSON.stringify(position));
-        this.props.loadNearByPosts();
+        // localStorage.setItem(POS_KEY, JSON.stringify(position));
+        this.props.loadNearByPosts(position);
     }
 
     render() {
